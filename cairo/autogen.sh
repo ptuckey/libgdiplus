@@ -14,11 +14,13 @@ cd $srcdir
 
 PACKAGE=cairo
 
-LIBTOOLIZE=${LIBTOOLIZE-libtoolize}
+#LIBTOOLIZE=${LIBTOOLIZE-libtoolize}
+LIBTOOLIZE=glibtoolize
 LIBTOOLIZE_FLAGS="--copy --force"
 AUTOHEADER=${AUTOHEADER-autoheader}
 AUTOMAKE_FLAGS="--add-missing --foreign"
 AUTOCONF=${AUTOCONF-autoconf}
+ACLOCAL_FLAGS=/usr/local/Cellar/pkg-config/0.28/share/aclocal/pkg.m4
 
 CONFIGURE_IN=
 test -f configure.in && CONFIGURE_IN=configure.in
